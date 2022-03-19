@@ -1,0 +1,10 @@
+p {
+color: green;
+}
+div p {
+    color: blue;
+}
+
+div p span { 
+    color: red;
+}
