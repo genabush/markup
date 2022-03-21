@@ -1,10 +1,29 @@
-p {
-color: green;
-}
-div p {
-    color: blue;
+/* относяться к шрифту */
+.p {
+font-size: 16px;
+font-weight: 700;
+font-style: italic;
+line-height: 24px;
 }
 
-div p span { 
+/* относяться к выделению текста */
+.p {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* относяться к цвету и фону */
+.p {
     color: red;
+    color: #000;
+    color: rgb(151, 187, 53);
+    color: rgba(151, 187, 53, 0);
+    /* фон */
+    background-color: green;
+    background-image: url('../img/clients-icon.svg');
+    background: green url('../img/clients-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    background-size: cover;
 }
