@@ -1,9 +1,17 @@
+.mt-3 {
+    margin-top: 10px;
+}
+
 /* относяться к шрифту */
 .p {
-font-size: 16px;
-font-weight: 700;
-font-style: italic;
-line-height: 24px;
+    font: italic 700 16px/24px 'Courier New',
+        Courier,
+        monospace;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 24px;
 }
 
 /* относяться к выделению текста */
@@ -27,3 +35,171 @@ line-height: 24px;
     background-position: 0 50px;
     background-size: cover;
 }
+/* ********************************************************************* */
+
+/* прозрачность (значения от 0 до 1, 0- полностью прозначный, 1 - не прозрачный) */
+.p {
+    opacity: 1;
+}
+
+/* border(граница, рамка) если нужно обвести какой-то блок */
+.p {
+    border: 1px solid red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+
+    border-top: 5px solid black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: red;
+}
+
+/* transition (плавность перехода) */
+.p:hover {
+    color: red;
+
+    transition: all 5s linear;
+
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+/* transform(трансформация) */
+.p {
+    transform: scale(2);
+    transform: translate(100px, 100px);
+    transform: rotateX(50deg);
+}
+
+/* http: //htmlbook.ru/css/position */
+/* position (5 типов: static(default), relative, absolute, sticky, fixed) */
+.p {
+    /* изначально у всех элементов */
+    position: static;
+}
+
+.parent {
+    position: relative;
+}
+
+.p {
+    /* position: absolute;
+    left: 100px;
+    top: 100px; */
+}
+
+.p {
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.p {
+    /* position: sticky;
+    top: 50px; */
+}
+/* до сюда  cтоп*/
+
+/* отступы (внутри блока - padding, вне блока - margin) */
+.p {
+    /* внутрений отступ (для увеличение ширины и высоты блока) */
+    padding: 50px;
+    padding-top: 10px;
+
+    /* внешний отступ (для увеличение расстояния от соседнего блока) */
+    margin: 50px;
+    margin-bottom: 10px;
+}
+
+/* border-radius (ракругление углов (в основном кнопок)) */
+.button {
+    border: 1px solid;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 20px;
+    /* сделать элемент круглым или то или то */
+    border-radius: 50%;
+    border-radius: 50px;
+}
+
+/* box-sizing (как браузер считает размер элемента) */
+.p {
+    /* занимает ширину и высоту коробки элемента (не выходит за грани высоты и ширины) */
+    box-sizing: border-box;
+    /* /* занимает ширину и высоту контента * */
+    box-sizing: content-box;
+}
+
+/* overflow (ограничить ширину блока и сделать прокрутку внутри него) */
+.p {
+    height: 100px;
+    width: 100px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* box-shadow (тень) наложить тень на блок */
+.p {
+    box-shadow: 0 0 10px 10px red;
+}
+
+/* свойства для списков */
+ul {
+    /* типы маркеров для списка */
+    list-style: disc;
+    list-style: circle;
+    list-style: decimal;
+    list-style: lower-alpha;
+    list-style: none;
+}
+
+/* !important  (
+     специфичность 1000,
+перебивает любые стили примененные рание к элементу
+)
+*/
+#p {
+    /* специфичность 100 */
+    color: #000;
+}
+
+.p {
+    /* специфичность 10 */
+    color: beige;
+}
+
+p {
+    /* специфичность 1  */
+    color: black;
+}
+
+p {
+    /* специфичность 1000 */
+    color: azure !important;
+}
+
+/* псевдо элементы
+http: //htmlbook.ru/css/after
+http: //htmlbook.ru/css/before
+ */
+
+/* псевдоклассы
+ http: //htmlbook.ru/css/focus
+ http: //htmlbook.ru/css/hover
+ http: //htmlbook.ru/css/last-child
+ http: //htmlbook.ru/css/first-child
+ http: //htmlbook.ru/css/nth-child
+  */
+
+/* 
+http: //htmlbook.ru/css/visibility
+http: //htmlbook.ru/css/word-wrap
+http: //htmlbook.ru/css/word-spacing
+http: //htmlbook.ru/css/word-break
+ */
