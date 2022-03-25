@@ -19,66 +19,62 @@
 <!-- весь контент сайта пишем внутри тега body -->
 
 <body>
-    <!-- заголовки h1-h6 (h1 должен быть только один) -->
-    <h1>Gena</h1>
-    <h2>Gena</h2>
-    <h3>Gena</h3>
-    <h4>Gena</h4>
-    <h5>Gena</h5>
-    <h6>Gena</h6>
-    <!-- теги для текста
+    <div>
+        <p class="1">1 первый</p>
+        <p class="1 2">1 первый</p>
+        <!-- теги для текста
         тег p - используем для больших параграфов, статей и так далее
         тег span -  используем для выделения определенного текста в параграфе или одного- друг слов текста
      -->
-    <div class="parent">
-        <p class="p">
-            Lorem ipsum dolor
-        </p>
-    </div>
+        <div class="parent">
+            <p class="p">
+                Lorem ipsum dolor
+            </p>
+        </div>
 
 
-    <!-- списки, почитать разницу ul и ol и типы маркеров для li 
+        <!-- списки, почитать разницу ul и ol и типы маркеров для li 
         li - элемент списка, нужно использовать только внутри списка (или ul или ol)
     -->
 
-    <!-- маркерованный список-->
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
+        <!-- маркерованный список-->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
 
-    <!-- нумированный список-->
-    <ol>
-        <li>петя</li>
-        <li>вася</li>
-        <li>коля </li>
-    </ol>
+        <!-- нумированный список-->
+        <ol>
+            <li>петя</li>
+            <li>вася</li>
+            <li>коля </li>
+        </ol>
 
-    <!-- таблица 
+        <!-- таблица 
         thead - часть таблицы где расспологаються заголовки
         tbody - часть таблицы где расспологаються основные данные
         tr - строка таблицы
         th - ячейка таблицы для заголовков
         td - ячейка таблицы для обычного контента
     -->
-    <table>
-        <thead>
-            <tr>
-                <th>Имя</th>
-                <th>Фамилия</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ветал</td>
-                <td>Астапов</td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- форма -->
-    <form>
-        <!-- аттрибут type тега input позволяет задать тип вводимого значения 
+        <table>
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ветал</td>
+                    <td>Астапов</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- форма -->
+        <form>
+            <!-- аттрибут type тега input позволяет задать тип вводимого значения 
             type="text" - позволяет вводить любое значение с клавивиатуры
             type="number" - позволяет вводить только цифры, точку, запятую
             type="file" - позволяет загрузить файл с комьютера на сайт, тип загружаемого файла можно определить 
@@ -88,76 +84,76 @@
              type="radio" -  позволяет выбрать значение из нескольких предложенных
              аттрибут name y type="radio" позволяет обьеденить несколько type="radio" в одну группу
         " -->
-        <div class="mt-3">
-            <input type="text">
-        </div>
-        <div class="mt-3">
-            <input type="number">
-        </div>
-        <div class="mt-3"><input type="file" accept="image/*"></div>
-        <div class="mt-3"><input type="password"></div>
-        <div class="mt-3"><input type="checkbox">Купи сейчас</div>
-        <div class="mt-3">
-            <input name="radio" type="radio">1ы
-            <input name="radio" type="radio">2
-        </div>
+            <div class="mt-3">
+                <input type="text">
+            </div>
+            <div class="mt-3">
+                <input type="number">
+            </div>
+            <div class="mt-3"><input type="file" accept="image/*"></div>
+            <div class="mt-3"><input type="password"></div>
+            <div class="mt-3"><input type="checkbox">Купи сейчас</div>
+            <div class="mt-3">
+                <input name="radio" type="radio">1ы
+                <input name="radio" type="radio">2
+            </div>
 
-        <div class="mt-3">
-            <!-- почитать что такое -->
-            <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </div>
-        <div class="mt-3">
-            <button>Отправить</button>
-        </div>
-        <div class="mt-3">
-            <textarea></textarea>
-        </div>
+            <div class="mt-3">
+                <!-- почитать что такое -->
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="mt-3">
+                <button>Отправить</button>
+            </div>
+            <div class="mt-3">
+                <textarea></textarea>
+            </div>
 
-    </form>
-    <!-- ссылка 
+        </form>
+        <!-- ссылка 
         аттрубут  href - это адрес ссылки
          аттрубут target (цель) - определяет в какой в вкладке браузера открыть ссылку 
          (изначальное поведение открывать вкладки в текущей вкладке)
          target="_blank" - открыть в ссылку в новой вкладке
     -->
-    <div class="mt-3">
-        <a target="_blank" href="https://www.google.com/">Google</a>
-    </div>
+        <div class="mt-3">
+            <a target="_blank" href="https://www.google.com/">Google</a>
+        </div>
 
-    <div class="mt-3">
-        <!-- ccылка на телефон выглядит так -->
-        <a href="tel:0933354055">+38 093 335 40 55</a>
-    </div>
-    <div class="mt-3">
-        <!-- ccылка на email выглядит так -->
-        <a href="mailto:genabush1990@gmail.com">genabush1990@gmail.com</a>
-    </div>
-    <div>
-        <!-- кнопка -->
-        <button>Нажми здесь</button>
-    </div>
+        <div class="mt-3">
+            <!-- ccылка на телефон выглядит так -->
+            <a href="tel:0933354055">+38 093 335 40 55</a>
+        </div>
+        <div class="mt-3">
+            <!-- ccылка на email выглядит так -->
+            <a href="mailto:genabush1990@gmail.com">genabush1990@gmail.com</a>
+        </div>
+        <div>
+            <!-- кнопка -->
+            <button>Нажми здесь</button>
+        </div>
 
-    <!-- 
+        <!-- 
         картинка 
      аттрубут src (source) - путь к картинке
      аттрубут alt (alternative text) - текс который будет видеть пользователь если картинка не загрузится
     -->
-    <img src="./img/clients-icon.svg" alt="clients-icon">
+        <img src="./img/clients-icon.svg" alt="clients-icon">
 
-    <!-- видео -->
-    <video src="./"></video>
+        <!-- видео -->
+        <video src="./"></video>
 
-    <!-- 
+        <!-- 
         iframe - это тег позволяющий вставить другой сайт в твой сайт (мы не может контролировать вставленный сайт) 
         используем для вставки видео из youtube, vimeo и других хостингов видео
      -->
-    <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-    </iframe>
+        <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe>
 </body>
 
 </html>

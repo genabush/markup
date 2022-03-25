@@ -35,6 +35,7 @@
     background-position: 0 50px;
     background-size: cover;
 }
+
 /* ********************************************************************* */
 
 /* прозрачность (значения от 0 до 1, 0- полностью прозначный, 1 - не прозрачный) */
@@ -71,8 +72,10 @@
 .p {
     transform: scale(2);
     transform: translate(100px, 100px);
-    transform: rotateX(50deg);
+    transform: rotateZ(50deg);
 }
+
+div p
 
 /* http: //htmlbook.ru/css/position */
 /* position (5 типов: static(default), relative, absolute, sticky, fixed) */
@@ -101,6 +104,7 @@
     /* position: sticky;
     top: 50px; */
 }
+
 /* до сюда  cтоп*/
 
 /* отступы (внутри блока - padding, вне блока - margin) */
@@ -127,6 +131,8 @@
     border-radius: 50px;
 }
 
+/* половина высоты
+
 /* box-sizing (как браузер считает размер элемента) */
 .p {
     /* занимает ширину и высоту коробки элемента (не выходит за грани высоты и ширины) */
@@ -149,6 +155,7 @@
     box-shadow: 0 0 10px 10px red;
 }
 
+
 /* свойства для списков */
 ul {
     /* типы маркеров для списка */
@@ -156,7 +163,7 @@ ul {
     list-style: circle;
     list-style: decimal;
     list-style: lower-alpha;
-    list-style: none;
+    list-style: none !important;
 }
 
 /* !important  (
@@ -180,8 +187,7 @@ p {
 }
 
 p {
-    /* специфичность 1000 */
-    color: azure !important;
+    /* специфичность 1000  !important; */
 }
 
 /* псевдо элементы
@@ -189,12 +195,30 @@ http: //htmlbook.ru/css/after
 http: //htmlbook.ru/css/before
  */
 
+p {
+    color: red;
+}
+
+div p:first-child {
+    color: yellow;
+}
+
+div p:last-child {
+    color: green;
+}
+
+div p:nth-child(3) {
+    background-color: black;
+    color: white;
+}
+
 /* псевдоклассы
  http: //htmlbook.ru/css/focus
  http: //htmlbook.ru/css/hover
  http: //htmlbook.ru/css/last-child
  http: //htmlbook.ru/css/first-child
- http: //htmlbook.ru/css/nth-child
+ http: //htmlbook.ru/css/nth-child (even -четные, odd -нечетные элементы)
+
   */
 
 /* 
@@ -203,3 +227,11 @@ http: //htmlbook.ru/css/word-wrap
 http: //htmlbook.ru/css/word-spacing
 http: //htmlbook.ru/css/word-break
  */
+
+/* cursor */
+
+/* max-width, max-height */
+
+/* z-index работает только в паре с position: relative, absolute, sticky, fixed*/
+
+/* Селекторы и их комбинации */
